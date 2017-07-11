@@ -1,0 +1,396 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF0099671F0DCF2A008353BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0099661F0DCF2A008353BB /* main.m */; };
+		CF00996A1F0DCF2A008353BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0099691F0DCF2A008353BB /* AppDelegate.m */; };
+		CF00996D1F0DCF2A008353BB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF00996C1F0DCF2A008353BB /* ViewController.m */; };
+		CF0099701F0DCF2B008353BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF00996E1F0DCF2B008353BB /* Main.storyboard */; };
+		CF0099721F0DCF2B008353BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF0099711F0DCF2B008353BB /* Assets.xcassets */; };
+		CF0099751F0DCF2B008353BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF0099731F0DCF2B008353BB /* LaunchScreen.storyboard */; };
+		CF00997F1F0DCF80008353BB /* LXFDrawBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = CF00997E1F0DCF80008353BB /* LXFDrawBoard.m */; };
+		CF0099851F0DD2DC008353BB /* LXFDoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0099841F0DD2DC008353BB /* LXFDoManager.m */; };
+		CF0099BF1F0E295B008353BB /* LXFArrowBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0099B41F0E295B008353BB /* LXFArrowBrush.m */; };
+		CF0099C01F0E295B008353BB /* LXFBaseBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0099B61F0E295B008353BB /* LXFBaseBrush.m */; };
+		CF0099C11F0E295B008353BB /* LXFLineBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0099B81F0E295B008353BB /* LXFLineBrush.m */; };
+		CF0099C21F0E295B008353BB /* LXFPencilBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0099BA1F0E295B008353BB /* LXFPencilBrush.m */; };
+		CF0099C31F0E295B008353BB /* LXFRectangleBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0099BC1F0E295B008353BB /* LXFRectangleBrush.m */; };
+		CF0099C41F0E295B008353BB /* LXFTextBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0099BE1F0E295B008353BB /* LXFTextBrush.m */; };
+		CF4F2C741F146475000CA467 /* LXFMosaicBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4F2C731F146475000CA467 /* LXFMosaicBrush.m */; };
+		CF4F2C761F147279000CA467 /* LXFDrawBoardStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4F2C751F147279000CA467 /* LXFDrawBoardStyle.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CF0099621F0DCF2A008353BB /* LXFDrawBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LXFDrawBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF0099661F0DCF2A008353BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF0099681F0DCF2A008353BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CF0099691F0DCF2A008353BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CF00996B1F0DCF2A008353BB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CF00996C1F0DCF2A008353BB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CF00996F1F0DCF2B008353BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF0099711F0DCF2B008353BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF0099741F0DCF2B008353BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF0099761F0DCF2C008353BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF00997D1F0DCF80008353BB /* LXFDrawBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFDrawBoard.h; sourceTree = "<group>"; };
+		CF00997E1F0DCF80008353BB /* LXFDrawBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFDrawBoard.m; sourceTree = "<group>"; };
+		CF0099831F0DD2DC008353BB /* LXFDoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFDoManager.h; sourceTree = "<group>"; };
+		CF0099841F0DD2DC008353BB /* LXFDoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFDoManager.m; sourceTree = "<group>"; };
+		CF0099B31F0E295B008353BB /* LXFArrowBrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFArrowBrush.h; sourceTree = "<group>"; };
+		CF0099B41F0E295B008353BB /* LXFArrowBrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFArrowBrush.m; sourceTree = "<group>"; };
+		CF0099B51F0E295B008353BB /* LXFBaseBrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFBaseBrush.h; sourceTree = "<group>"; };
+		CF0099B61F0E295B008353BB /* LXFBaseBrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFBaseBrush.m; sourceTree = "<group>"; };
+		CF0099B71F0E295B008353BB /* LXFLineBrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFLineBrush.h; sourceTree = "<group>"; };
+		CF0099B81F0E295B008353BB /* LXFLineBrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFLineBrush.m; sourceTree = "<group>"; };
+		CF0099B91F0E295B008353BB /* LXFPencilBrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFPencilBrush.h; sourceTree = "<group>"; };
+		CF0099BA1F0E295B008353BB /* LXFPencilBrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFPencilBrush.m; sourceTree = "<group>"; };
+		CF0099BB1F0E295B008353BB /* LXFRectangleBrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFRectangleBrush.h; sourceTree = "<group>"; };
+		CF0099BC1F0E295B008353BB /* LXFRectangleBrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFRectangleBrush.m; sourceTree = "<group>"; };
+		CF0099BD1F0E295B008353BB /* LXFTextBrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFTextBrush.h; sourceTree = "<group>"; };
+		CF0099BE1F0E295B008353BB /* LXFTextBrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFTextBrush.m; sourceTree = "<group>"; };
+		CF0099C51F0E2990008353BB /* LXFDrawBoardStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFDrawBoardStyle.h; sourceTree = "<group>"; };
+		CF4F2C721F146475000CA467 /* LXFMosaicBrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFMosaicBrush.h; sourceTree = "<group>"; };
+		CF4F2C731F146475000CA467 /* LXFMosaicBrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFMosaicBrush.m; sourceTree = "<group>"; };
+		CF4F2C751F147279000CA467 /* LXFDrawBoardStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFDrawBoardStyle.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF00995F1F0DCF2A008353BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF0099591F0DCF29008353BB = {
+			isa = PBXGroup;
+			children = (
+				CF0099641F0DCF2A008353BB /* LXFDrawBoard */,
+				CF0099631F0DCF2A008353BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF0099631F0DCF2A008353BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF0099621F0DCF2A008353BB /* LXFDrawBoard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF0099641F0DCF2A008353BB /* LXFDrawBoard */ = {
+			isa = PBXGroup;
+			children = (
+				CF00997C1F0DCF49008353BB /* LXFDrawBoard */,
+				CF0099681F0DCF2A008353BB /* AppDelegate.h */,
+				CF0099691F0DCF2A008353BB /* AppDelegate.m */,
+				CF00996B1F0DCF2A008353BB /* ViewController.h */,
+				CF00996C1F0DCF2A008353BB /* ViewController.m */,
+				CF00996E1F0DCF2B008353BB /* Main.storyboard */,
+				CF0099711F0DCF2B008353BB /* Assets.xcassets */,
+				CF0099731F0DCF2B008353BB /* LaunchScreen.storyboard */,
+				CF0099761F0DCF2C008353BB /* Info.plist */,
+				CF0099651F0DCF2A008353BB /* Supporting Files */,
+			);
+			path = LXFDrawBoard;
+			sourceTree = "<group>";
+		};
+		CF0099651F0DCF2A008353BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF0099661F0DCF2A008353BB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF00997C1F0DCF49008353BB /* LXFDrawBoard */ = {
+			isa = PBXGroup;
+			children = (
+				CF0099B21F0E295B008353BB /* LXFBrush */,
+				CF00997D1F0DCF80008353BB /* LXFDrawBoard.h */,
+				CF00997E1F0DCF80008353BB /* LXFDrawBoard.m */,
+				CF0099831F0DD2DC008353BB /* LXFDoManager.h */,
+				CF0099841F0DD2DC008353BB /* LXFDoManager.m */,
+				CF0099C51F0E2990008353BB /* LXFDrawBoardStyle.h */,
+				CF4F2C751F147279000CA467 /* LXFDrawBoardStyle.m */,
+			);
+			path = LXFDrawBoard;
+			sourceTree = "<group>";
+		};
+		CF0099B21F0E295B008353BB /* LXFBrush */ = {
+			isa = PBXGroup;
+			children = (
+				CF0099B31F0E295B008353BB /* LXFArrowBrush.h */,
+				CF0099B41F0E295B008353BB /* LXFArrowBrush.m */,
+				CF0099B51F0E295B008353BB /* LXFBaseBrush.h */,
+				CF0099B61F0E295B008353BB /* LXFBaseBrush.m */,
+				CF0099B71F0E295B008353BB /* LXFLineBrush.h */,
+				CF0099B81F0E295B008353BB /* LXFLineBrush.m */,
+				CF0099B91F0E295B008353BB /* LXFPencilBrush.h */,
+				CF0099BA1F0E295B008353BB /* LXFPencilBrush.m */,
+				CF0099BB1F0E295B008353BB /* LXFRectangleBrush.h */,
+				CF0099BC1F0E295B008353BB /* LXFRectangleBrush.m */,
+				CF0099BD1F0E295B008353BB /* LXFTextBrush.h */,
+				CF0099BE1F0E295B008353BB /* LXFTextBrush.m */,
+				CF4F2C721F146475000CA467 /* LXFMosaicBrush.h */,
+				CF4F2C731F146475000CA467 /* LXFMosaicBrush.m */,
+			);
+			path = LXFBrush;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF0099611F0DCF2A008353BB /* LXFDrawBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF0099791F0DCF2C008353BB /* Build configuration list for PBXNativeTarget "LXFDrawBoard" */;
+			buildPhases = (
+				CF00995E1F0DCF2A008353BB /* Sources */,
+				CF00995F1F0DCF2A008353BB /* Frameworks */,
+				CF0099601F0DCF2A008353BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LXFDrawBoard;
+			productName = LXFDrawBoard;
+			productReference = CF0099621F0DCF2A008353BB /* LXFDrawBoard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF00995A1F0DCF29008353BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = LXF;
+				TargetAttributes = {
+					CF0099611F0DCF2A008353BB = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = YW4UZF7FT3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CF00995D1F0DCF29008353BB /* Build configuration list for PBXProject "LXFDrawBoard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF0099591F0DCF29008353BB;
+			productRefGroup = CF0099631F0DCF2A008353BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF0099611F0DCF2A008353BB /* LXFDrawBoard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF0099601F0DCF2A008353BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF0099751F0DCF2B008353BB /* LaunchScreen.storyboard in Resources */,
+				CF0099721F0DCF2B008353BB /* Assets.xcassets in Resources */,
+				CF0099701F0DCF2B008353BB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF00995E1F0DCF2A008353BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF00996D1F0DCF2A008353BB /* ViewController.m in Sources */,
+				CF0099BF1F0E295B008353BB /* LXFArrowBrush.m in Sources */,
+				CF00997F1F0DCF80008353BB /* LXFDrawBoard.m in Sources */,
+				CF4F2C741F146475000CA467 /* LXFMosaicBrush.m in Sources */,
+				CF0099851F0DD2DC008353BB /* LXFDoManager.m in Sources */,
+				CF0099C01F0E295B008353BB /* LXFBaseBrush.m in Sources */,
+				CF0099C21F0E295B008353BB /* LXFPencilBrush.m in Sources */,
+				CF00996A1F0DCF2A008353BB /* AppDelegate.m in Sources */,
+				CF0099C41F0E295B008353BB /* LXFTextBrush.m in Sources */,
+				CF0099C31F0E295B008353BB /* LXFRectangleBrush.m in Sources */,
+				CF0099671F0DCF2A008353BB /* main.m in Sources */,
+				CF4F2C761F147279000CA467 /* LXFDrawBoardStyle.m in Sources */,
+				CF0099C11F0E295B008353BB /* LXFLineBrush.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CF00996E1F0DCF2B008353BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF00996F1F0DCF2B008353BB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF0099731F0DCF2B008353BB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF0099741F0DCF2B008353BB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF0099771F0DCF2C008353BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CF0099781F0DCF2C008353BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF00997A1F0DCF2C008353BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YW4UZF7FT3;
+				INFOPLIST_FILE = LXFDrawBoard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LXF.LXFDrawBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CF00997B1F0DCF2C008353BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YW4UZF7FT3;
+				INFOPLIST_FILE = LXFDrawBoard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LXF.LXFDrawBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF00995D1F0DCF29008353BB /* Build configuration list for PBXProject "LXFDrawBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF0099771F0DCF2C008353BB /* Debug */,
+				CF0099781F0DCF2C008353BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF0099791F0DCF2C008353BB /* Build configuration list for PBXNativeTarget "LXFDrawBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF00997A1F0DCF2C008353BB /* Debug */,
+				CF00997B1F0DCF2C008353BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF00995A1F0DCF29008353BB /* Project object */;
+}

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LXFBG" translatesAutoresizingMaskIntoConstraints="NO" id="hwF-j8-AsT" customClass="LXFDrawBoard">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="625"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldk-zS-GJ6">
+                                <rect key="frame" x="20" y="633" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="撤销"/>
+                                <connections>
+                                    <action selector="revoke" destination="BYZ-38-t0r" eventType="touchUpInside" id="2QJ-dR-dj7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVJ-1f-RhM">
+                                <rect key="frame" x="59" y="633" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="反撤销"/>
+                                <connections>
+                                    <action selector="redo" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ud5-wC-wSV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RxH-kY-lUq">
+                                <rect key="frame" x="113" y="633" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="铅笔"/>
+                                <connections>
+                                    <action selector="pencilBrush" destination="BYZ-38-t0r" eventType="touchUpInside" id="FJC-qQ-rXN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dvz-w8-AuX">
+                                <rect key="frame" x="152" y="633" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="箭头"/>
+                                <connections>
+                                    <action selector="arrowBrush" destination="BYZ-38-t0r" eventType="touchUpInside" id="kh3-gj-nCS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpR-vR-YbD">
+                                <rect key="frame" x="191" y="633" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="直线"/>
+                                <connections>
+                                    <action selector="lineBrush" destination="BYZ-38-t0r" eventType="touchUpInside" id="zcn-zk-DWq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJP-Jc-W4F">
+                                <rect key="frame" x="230" y="633" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="文本"/>
+                                <connections>
+                                    <action selector="textBrush" destination="BYZ-38-t0r" eventType="touchUpInside" id="SJ5-1k-ONF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWQ-M9-Txa">
+                                <rect key="frame" x="269" y="633" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="矩形"/>
+                                <connections>
+                                    <action selector="rectangleBrush" destination="BYZ-38-t0r" eventType="touchUpInside" id="55Q-t5-AWi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8p-ku-ANc">
+                                <rect key="frame" x="308" y="633" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="马赛克"/>
+                                <connections>
+                                    <action selector="mosaicBrush" destination="BYZ-38-t0r" eventType="touchUpInside" id="kOp-ny-8Nu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hwF-j8-AsT" secondAttribute="trailing" id="0Vg-Jd-eBr"/>
+                            <constraint firstItem="hwF-j8-AsT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1vI-4E-ghX"/>
+                            <constraint firstItem="hwF-j8-AsT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="GRQ-eK-Y2e"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hwF-j8-AsT" secondAttribute="bottom" constant="42" id="cmh-iF-Uzl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="board" destination="hwF-j8-AsT" id="scH-xg-am8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LXFBG" width="640" height="1138"/>
+    </resources>
+</document>
