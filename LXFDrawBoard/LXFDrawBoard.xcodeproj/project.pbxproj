@@ -23,6 +23,7 @@
 		CF0099C41F0E295B008353BB /* LXFTextBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0099BE1F0E295B008353BB /* LXFTextBrush.m */; };
 		CF4F2C741F146475000CA467 /* LXFMosaicBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4F2C731F146475000CA467 /* LXFMosaicBrush.m */; };
 		CF4F2C761F147279000CA467 /* LXFDrawBoardStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4F2C751F147279000CA467 /* LXFDrawBoardStyle.m */; };
+		FD3D280D1F78F72E005DBDD3 /* LXFEraserBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3D280C1F78F72E005DBDD3 /* LXFEraserBrush.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,8 @@
 		CF4F2C721F146475000CA467 /* LXFMosaicBrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFMosaicBrush.h; sourceTree = "<group>"; };
 		CF4F2C731F146475000CA467 /* LXFMosaicBrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFMosaicBrush.m; sourceTree = "<group>"; };
 		CF4F2C751F147279000CA467 /* LXFDrawBoardStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFDrawBoardStyle.m; sourceTree = "<group>"; };
+		FD3D280B1F78F72E005DBDD3 /* LXFEraserBrush.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXFEraserBrush.h; sourceTree = "<group>"; };
+		FD3D280C1F78F72E005DBDD3 /* LXFEraserBrush.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXFEraserBrush.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +144,8 @@
 				CF0099BE1F0E295B008353BB /* LXFTextBrush.m */,
 				CF4F2C721F146475000CA467 /* LXFMosaicBrush.h */,
 				CF4F2C731F146475000CA467 /* LXFMosaicBrush.m */,
+				FD3D280B1F78F72E005DBDD3 /* LXFEraserBrush.h */,
+				FD3D280C1F78F72E005DBDD3 /* LXFEraserBrush.m */,
 			);
 			path = LXFBrush;
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 				CF0099C21F0E295B008353BB /* LXFPencilBrush.m in Sources */,
 				CF00996A1F0DCF2A008353BB /* AppDelegate.m in Sources */,
 				CF0099C41F0E295B008353BB /* LXFTextBrush.m in Sources */,
+				FD3D280D1F78F72E005DBDD3 /* LXFEraserBrush.m in Sources */,
 				CF0099C31F0E295B008353BB /* LXFRectangleBrush.m in Sources */,
 				CF0099671F0DCF2A008353BB /* main.m in Sources */,
 				CF4F2C761F147279000CA467 /* LXFDrawBoardStyle.m in Sources */,

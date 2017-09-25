@@ -41,6 +41,9 @@ typedef enum : NSUInteger {
 /** 绘图状态 */
 @property(nonatomic, assign) LXFDrawStatus drawStatus;
 
+/** 绘图专门之ImageView */
+@property(nonatomic, strong) UIImageView *drawImageView;
+
 @end
 
 @implementation LXFDrawBoard
@@ -76,7 +79,12 @@ typedef enum : NSUInteger {
     self.drawable = NO;
     self.userInteractionEnabled = YES;
     self.drawStatus = LXFDrawStatusEnd;
-    self.doManager = [[LXFDoManager alloc] initWithOriginImage:self.image];
+    self.drawImageView = [[UIImageView alloc] initWithImage:self.image];
+    self.drawImageView.contentMode = self.contentMode;
+    self.drawImageView.frame = self.bounds;
+    [self addSubview:self.drawImageView];
+    
+    self.doManager = [[LXFDoManager alloc] initWithOriginImage:self.drawImageView.image];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -194,6 +202,10 @@ typedef enum : NSUInteger {
     if (self.delegate && [self.delegate respondsToSelector:@selector(touchesEndedWithLXFDrawBoard:)]) {
         [self.delegate touchesEndedWithLXFDrawBoard:self];
     }
+    
+    // 重置当前绘图图像，主要是修复马赛克的bug
+    self.curPaintImage = [self snapsHotView:self];
+    self.drawImageView.image = self.curPaintImage;
 }
 
 #pragma mark - 事件处理
@@ -201,21 +213,21 @@ typedef enum : NSUInteger {
 - (void)revoke {
     if (!self.canRevoke) return;
     
-    self.image = [self.doManager imageForRevoke];
-    self.curPaintImage = self.image;
+    self.drawImageView.image = [self.doManager imageForRevoke];
+    self.curPaintImage = self.drawImageView.image;
 }
 
 #pragma mark 反撤销
 - (void)redo {
     if (!self.canRedo) return;
     
-    self.image = [self.doManager imageForRedo];
-    self.curPaintImage = self.image;
+    self.drawImageView.image = [self.doManager imageForRedo];
+    self.curPaintImage = self.drawImageView.image;
 }
 
 - (UIImage *)curPaintImage {
     if (!_curPaintImage) {
-        _curPaintImage = self.image;
+        _curPaintImage = self.drawImageView.image;
     }
     return _curPaintImage;
 }
@@ -247,7 +259,7 @@ typedef enum : NSUInteger {
     
     UIGraphicsEndImageContext();
     
-    self.image = image;
+    self.drawImageView.image = image;
     if (self.brush.keepDrawing) {
         self.curPaintImage = image;
     }
@@ -305,4 +317,17 @@ typedef enum : NSUInteger {
     return _descLabelArr;
 }
 
+#pragma mark - private method
+- (UIImage *)snapsHotView:(UIView *)view
+{
+    UIGraphicsBeginImageContextWithOptions(view.bounds.size,YES,[UIScreen mainScreen].scale);
+    [view drawViewHierarchyInRect:view.bounds afterScreenUpdates:NO];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
+
 @end
+
+
+

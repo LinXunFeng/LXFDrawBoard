@@ -22,6 +22,18 @@
 
 ## 笔刷
 
+### 2017–09-25 更新
+
+橡皮擦
+
+![image](https://github.com/LinXunFeng/LXFDrawBoard/raw/master/Screenshots/橡皮擦.gif)
+
+
+
+***
+
+
+
 铅笔 LXFPencilBrush
 
 ![image](https://github.com/LinXunFeng/LXFDrawBoard/raw/master/Screenshots/铅笔.gif)
@@ -49,4 +61,8 @@
 撤销与反撤销
 
 ![image](https://github.com/LinXunFeng/LXFDrawBoard/raw/master/Screenshots/撤销与反撤销.gif)
+
+
+
+
 

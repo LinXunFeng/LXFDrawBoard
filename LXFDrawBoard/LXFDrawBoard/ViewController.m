@@ -13,6 +13,7 @@
 #import "LXFArrowBrush.h"
 #import "LXFTextBrush.h"
 #import "LXFMosaicBrush.h"
+#import "LXFEraserBrush.h"
 
 @interface ViewController () <LXFDrawBoardDelegate>
 
@@ -45,21 +46,32 @@
 
 - (IBAction)pencilBrush {
     self.board.brush = [LXFPencilBrush new];
+    self.board.style.lineWidth = 2;
 }
 - (IBAction)arrowBrush {
     self.board.brush = [LXFArrowBrush new];
+    self.board.style.lineWidth = 2;
 }
 - (IBAction)lineBrush {
     self.board.brush = [LXFLineBrush new];
+    self.board.style.lineWidth = 2;
 }
 - (IBAction)textBrush {
     self.board.brush = [LXFTextBrush new];
+    self.board.style.lineWidth = 2;
 }
 - (IBAction)rectangleBrush {
     self.board.brush = [LXFRectangleBrush new];
+    self.board.style.lineWidth = 2;
 }
 - (IBAction)mosaicBrush {
     self.board.brush = [LXFMosaicBrush new];
+    self.board.style.lineWidth = 2;
+}
+- (IBAction)eraserBrush {
+    self.board.brush = [LXFEraserBrush new];
+    // 调整笔刷大小
+    self.board.style.lineWidth = 10;
 }
 
 #pragma mark - LXFDrawBoardDelegate
