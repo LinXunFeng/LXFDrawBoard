@@ -74,6 +74,10 @@ typedef enum : NSUInteger {
     return self;
 }
 
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    self.drawImageView.frame = self.bounds;
+}
 
 - (void)initData {
     self.drawable = NO;
@@ -81,7 +85,6 @@ typedef enum : NSUInteger {
     self.drawStatus = LXFDrawStatusEnd;
     self.drawImageView = [[UIImageView alloc] initWithImage:self.image];
     self.drawImageView.contentMode = self.contentMode;
-    self.drawImageView.frame = self.bounds;
     [self addSubview:self.drawImageView];
     
     self.doManager = [[LXFDoManager alloc] initWithOriginImage:self.drawImageView.image];
@@ -236,7 +239,7 @@ typedef enum : NSUInteger {
 - (void)drawImage {
     if (!self.brush) return;
     
-    UIGraphicsBeginImageContext(self.bounds.size);
+    UIGraphicsBeginImageContextWithOptions(self.bounds.size, NO, [[UIScreen mainScreen] scale]);
     
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     
@@ -327,7 +330,7 @@ typedef enum : NSUInteger {
 //    UIGraphicsEndImageContext();
 //    return image;
     
-    UIGraphicsBeginImageContext(self.bounds.size);
+    UIGraphicsBeginImageContextWithOptions(self.bounds.size, NO, [[UIScreen mainScreen] scale]);
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     [self.layer renderInContext:ctx];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
